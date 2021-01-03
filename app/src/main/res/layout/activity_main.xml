@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="activity"
-            type="com.pierluigifimiano.livedataktxexample.MainActivity" />
+            name="viewModel"
+            type="com.pierluigifimiano.livedataktxexample.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:text="@{activity.ld1.toString()}"
+            android:text="@{viewModel.a.toString()}"
             app:layout_constraintBottom_toTopOf="@id/b"
             app:layout_constraintEnd_toStartOf="@id/inc_a"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:text="@{activity.ld2.toString()}"
+            android:text="@{viewModel.b.toString()}"
             app:layout_constraintBottom_toTopOf="@id/sum"
             app:layout_constraintEnd_toStartOf="@id/inc_b"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:onClick="@{() -> activity.incOrDecAOrB(true, true)}"
+            android:onClick="@{() -> viewModel.incOrDecAOrB(true, true)}"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="@id/a"
             app:layout_constraintEnd_toStartOf="@id/dec_a"
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:onClick="@{() -> activity.incOrDecAOrB(false, true)}"
+            android:onClick="@{() -> viewModel.incOrDecAOrB(false, true)}"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="@id/b"
             app:layout_constraintEnd_toStartOf="@id/dec_b"
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:onClick="@{() -> activity.incOrDecAOrB(true, false)}"
+            android:onClick="@{() -> viewModel.incOrDecAOrB(true, false)}"
             android:text="-"
             app:layout_constraintBottom_toBottomOf="@id/a"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:onClick="@{() -> activity.incOrDecAOrB(false, false)}"
+            android:onClick="@{() -> viewModel.incOrDecAOrB(false, false)}"
             android:text="-"
             app:layout_constraintBottom_toBottomOf="@id/b"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +93,7 @@
             android:id="@+id/sum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{activity.ld.toString()}"
+            android:text="@{viewModel.sum.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
