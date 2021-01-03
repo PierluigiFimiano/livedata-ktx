@@ -1,4 +1,4 @@
-@file:Suppress("ClassName")
+@file:Suppress("ClassName", "unused")
 
 package com.pierluigifimiano.livedataktx
 
