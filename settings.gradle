@@ -1,0 +1,3 @@
+include ':livedataktx'
+include ':app'
+rootProject.name = "LiveDataKtxExample"
